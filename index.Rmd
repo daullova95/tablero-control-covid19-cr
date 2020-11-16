@@ -564,7 +564,7 @@ leaflet_cantones <- leaflet(sf_fallecidos_cantones_ultima_fecha) %>%
               group = "Cantones",
               popup = paste("Provincia: ", sf_fallecidos_cantones_ultima_fecha$provincia, "<br>",
                             "Cantón: ", sf_fallecidos_cantones_ultima_fecha$canton, "<br>",
-                            "fallecidos: ", sf_fallecidos_cantones_ultima_fecha$RECUPERADOS
+                            "Fallecidos: ", sf_fallecidos_cantones_ultima_fecha$fallecidos
                             )
   ) %>%
   addLegend("bottomright", pal = paleta_violeta, values = ~fallecidos,
